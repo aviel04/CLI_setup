@@ -11,18 +11,24 @@ sudo apt install -y zoxide fish htop tmux neovim git bat ripgrep tldr fd-find bt
 # -------- fish config --------- #
 # -------- tmux config --------- #
 # -------- batcat config --------- #
+# -------- Helm Setup -------- #
+bash ./tools_configs/get_helm.sh
+
+#
 # -------- kubecolor config --------- #
+# echo 'alias k=kubecolor' >> ~/.bashrc
 #
 # -------- kubectl installation --------------#
 # sudo snap install kubectl --classic
 #
 # -------- fzf config --------- #
-#bash ./tools_configs/fzf_setup.sh
+bash ./tools_configs/fzf_setup.sh
 #
 # -------- zoxide config --------- #
 #add if zoxide init bash is in the file check with cat -> grep
-#zoxide init
-#echo eval '"$(zoxide init bash)"' >> bashrc
+sudo apt install -y zoxide 
+zoxide init --bash
+echo eval '"$(zoxide init bash)"' >> bashrc
 
 # -------------- eza Setup ---------------------- #
-# cat tools_configs/eza_setup.txt >> ~/.bashrc
+bash ./tools_configs/eza_setup.sh
