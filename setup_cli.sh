@@ -4,25 +4,25 @@ echo 'updating packages:'
 sudo apt update && sudo apt upgrade -y
 
 # add available by default packages 
-sudo apt install -y zoxide fish htop tmux neovim git bat ripgrep tldr fd-find btop docker.io podman buildah kubecolor eza make unzip gcc ncdu 
+sudo apt install -y zoxide fish htop tmux neovim git bat ripgrep tldr fd-find btop docker.io podman buildah kubecolor eza make unzip gcc ncdu gh
 
-# Lazygit installation
+# -------- Lazygit installation --------- #
+# -------- zellij installation --------- #
+# -------- fish config --------- #
+# -------- tmux config --------- #
+# -------- batcat config --------- #
+# -------- kubecolor config --------- #
 #
-# zellij installation
+# -------- kubectl installation --------------#
+# sudo snap install kubectl --classic
 #
-# kubectl installation
-#
-# fish config
-# tmux config
-# batcat config
-# kubecolor config
-# fzf config
+# -------- fzf config --------- #
 #bash ./tools_configs/fzf_setup.sh
-# zoxide config
-# add if zoxide init bash is in the file check with cat -> grep
+#
+# -------- zoxide config --------- #
+#add if zoxide init bash is in the file check with cat -> grep
 #zoxide init
 #echo eval '"$(zoxide init bash)"' >> bashrc
-
 
 # -------------- eza Setup ---------------------- #
 # cat tools_configs/eza_setup.txt >> ~/.bashrc
