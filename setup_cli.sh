@@ -4,7 +4,7 @@ echo 'updating packages:'
 sudo apt update && sudo apt upgrade -y
 
 # add available by default packages 
-sudo apt install -y zoxide fish htop tmux neovim git bat ripgrep tldr fd-find btop docker.io podman buildah kubecolor eza make unzip gcc ncdu gh
+sudo apt install -y tree fish htop tmux neovim git bat ripgrep tldr fd-find btop docker.io podman buildah kubecolor eza make unzip gcc ncdu gh
 
 # -------- Lazygit installation --------- #
 # -------- zellij installation --------- #
