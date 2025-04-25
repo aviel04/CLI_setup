@@ -27,7 +27,7 @@ bash ./tools_configs/fzf_setup.sh
 # -------- zoxide config --------- #
 #add if zoxide init bash is in the file check with cat -> grep
 sudo apt install -y zoxide 
-zoxide init --bash
+zoxide init bash
 echo eval '"$(zoxide init bash)"' >> bashrc
 
 # -------------- eza Setup ---------------------- #
